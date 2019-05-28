@@ -6351,8 +6351,7 @@ a {
     justify-content: center; }
   .most-read-box .box-content {
     margin-top: 30px;
-    position: relative;
-    padding-left: 10px; }
+    position: relative; }
     .most-read-box .box-content .story {
       width: 230px;
       height: 435px;
@@ -7084,7 +7083,7 @@ a {
   margin-top: 10px; }
 
 .container {
-  width: 1156px !important; }
+  width: 1170px !important; }
 
 .home-page .site-body {
   padding-bottom: 50px; }
