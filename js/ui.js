@@ -59,6 +59,16 @@ $(".f1-table .panel-title a").click(function(e) {
     $("#" + t).show()
 });
 
+
+$(".f1-table .panel > button").click(function(e) {
+    e.preventDefault();
+    $(this).toggleClass("expand");
+    $(this).siblings('.f1-table-detail').toggleClass("is-active");
+});
+
+
+
+
 // // pin menu 
 // $(document).scroll(function() {
 //     var scrollTop = $(document).scrollTop();
@@ -147,18 +157,6 @@ $('.article__body').each(function() {
         var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
         lightBox.init();
     });
-});
-
-// > toolsPage
-// location        : sidebar 
-
-$('.accordion__toggle').click(function() {
-    //Expand or collapse this panel
-    $(this).toggleClass('is-active');
-    $(this).next().toggleClass('is-active');
-    //Hide the other panels
-    $(".accordion__toggle").not($(this)).removeClass('is-active');
-    $(".accordion__content").not($(this).next()).removeClass('is-active');
 });
 
 // > channel-timeline 
